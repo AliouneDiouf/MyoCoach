@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>MyoCoach Project</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    p {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 100px;
+        position: absolute;
+        left: 40%;
+        top: 50%;
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+        /* Cette valeur doit être la moitié négative de la valeur du width */
+        margin-top: -100px;
+    }
+    
+    p1 {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 50px;
+        position: absolute;
+        left: 40%;
+        top: 70%;
+        width: 800px;
+        height: 800px;
+        margin-left: -100px;
+        /* Cette valeur doit être la moitié négative de la valeur du width */
+        margin-top: -100px;
+    }
+    
+    p2 {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 10px;
+        position: absolute;
+        left: 40%;
+        top: 97%;
+        width: 800px;
+        height: 800px;
+        margin-left: -100px;
+        /* Cette valeur doit être la moitié négative de la valeur du width */
+        margin-top: -100px;
+    }
+    
+    c1 {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 30px;
+        position: absolute;
+        left: 60%;
+        top: 30%;
+        width: 800px;
+        height: 800px;
+        margin-left: -100px;
+        /* Cette valeur doit être la moitié négative de la valeur du width */
+        margin-top: -100px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="inner-width">
+            <a href="#" class="logo"><img src="logo1.jpg" alt=""></a>
+            <i class="menu-toggle-btn fas fa-bars"></i>
+            <nav class="navigation-menu">
+                <a href="#"><i class="fas fa-home home"></i> Home</a>
+                <a href="{{ url_for('index') }}"><i class="fas fa-align-left about"></i> VISUALIZATION</a>
+                <a href="{{ url_for('gaming') }}"><i class="fab fa-buffer works"></i> GAMING</a>
+                <a href="{{ url_for('about') }}"><i class="fas fa-users team"></i> ABOUT US</a>
+                <a href="{{ url_for('tutorials') }}"><i class="fas fa-headset contact"></i> TUTORIALS</a>
+                <a href="https://github.com/orthopus/01-myocoach"><i class="fa fa-github"></i> Github</a>
+
+
+            </nav>
+        </div>
+
+
+
+    </header>
+
+    <p>
+        Hello!
+    </p>
+
+
+    <p1>
+        MyoCoach Project
+    </p1>
+
+    <p2>
+        By Dioufy;)
+    </p2>
+
+    <c1>
+        Please check if both EMG sensors are well placed before doing a visualization or a serious game ! You can click on the tutorials tab to get more informations.
+
+    </c1>
+
+    <img src='https://raw.githubusercontent.com/orthopus/01-myocoach/master/assets/myocoach.png'>
+
+
+    <script type="text/javascript">
+        $(".menu-toggle-btn").click(function() {
+            $(this).toggleClass("fa-times");
+            $(".navigation-menu").toggleClass("active");
+        });
+    </script>
+
+</body>
+
+</html>
