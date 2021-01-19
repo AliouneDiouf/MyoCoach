@@ -12,6 +12,12 @@ ser = serial.Serial('/dev/ttyACM0', 9600)
 @app.route('/about')
 def about():
   return render_template("about.html")
+@app.route('/level1')
+def level1():
+  return render_template("level1.html")
+@app.route('/level2')
+def level2():
+  return render_template("level2.html")
 
 @app.route('/tutorials')
 def tutorials():
