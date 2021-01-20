@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Myocoach Project</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js">
+    </script>
+</head>
+<style>
+    body {
+        background-color: #f9f9f9;
+    }
+    
+    .background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    p {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 100px;
+        position: absolute;
+        left: 40%;
+        top: 50%;
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+        /* Cette valeur doit être la moitié négative de la valeur du width */
+        margin-top: -100px;
+    }
+    
+    p1 {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 50px;
+        position: absolute;
+        left: 40%;
+        top: 70%;
+        width: 800px;
+        height: 800px;
+        margin-left: -100px;
+        /* Cette valeur doit être la moitié négative de la valeur du width */
+        margin-top: -100px;
+    }
+    
+    p2 {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 10px;
+        position: absolute;
+        left: 40%;
+        top: 97%;
+        width: 800px;
+        height: 800px;
+        margin-left: -100px;
+        /* Cette valeur doit être la moitié négative de la valeur du width */
+        margin-top: -100px;
+    }
+    
+    c1 {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 30px;
+        position: absolute;
+        left: 60%;
+        top: 30%;
+        width: 800px;
+        height: 800px;
+        margin-left: -100px;
+        /* Cette valeur doit être la moitié négative de la valeur du width */
+        margin-top: -100px;
+    }
+    
+    dt {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 25px;
+    }
+    
+    dd {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="inner-width">
+            <a href="#" class="logo"><img src="logo1.jpg" alt=""></a>
+            <i class="menu-toggle-btn fas fa-bars"></i>
+            <nav class="navigation-menu">
+                <a href="/"><i class="fas fa-home home"></i> HOME</a>
+
+                <a href="{{ url_for('level1') }}"><i class="fab fa-buffer works"></i> GAME 1</a>
+                <a href="{{ url_for('level2') }}"><i class="fas fa-users team"></i> GAME 2</a>
+
+                <a href="https://github.com/orthopus/01-myocoach"><i class="fa fa-github"></i> Github</a>
+
+
+            </nav>
+        </div>
+
+
+
+    </header>
+
+
+
+    <canvas class="background"></canvas>
+    <p1>
+        Serious Gaming
+    </p1>
+
+    <p2>
+        By Dioufy;)
+    </p2>
+
+    <c1>
+
+        <dt>Game 1</dt>
+
+        <dd>- Snake Game</dd>
+        <dd>- You will use both EMG for this one</dd>
+
+        <dt>Game 2</dt>
+        <dd>- Flappy Bird Game</dd>
+        <dd>- Just one EMG needed </dd>
+    </c1>
+
+    <img src='static/image.png'>
+
+
+    <script type="text/javascript">
+        $(".menu-toggle-btn").click(function() {
+            $(this).toggleClass("fa-times");
+            $(".navigation-menu").toggleClass("active");
+        });
+    </script>
+
+    <script>
+        var particles = Particles.init({
+            selector: '.background',
+            color: ['#DA0463', '#33B1FF', '#F3FF33'],
+            connectParticles: true,
+
+        });
+    </script>
+
+</body>
+
+</html>

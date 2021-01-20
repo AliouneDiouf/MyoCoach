@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Snake Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="static/JS/raphael-min.js"></script>
+    <script type="text/javascript" src="static/JS/justgage.min.js">
+    </script>
+    <script src="static/JS/jquery.min.js"></script>
+
+
+    <style>
+        body {
+            color: black;
+            background-color: white;
+            background-image: url(static/back9.png);
+        }
+        
+        p {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 80px;
+            position: absolute;
+            left: 35%;
+            top: 10%;
+            width: 200px;
+            height: 200px;
+            margin-left: -100px;
+            /* Cette valeur doit être la moitié négative de la valeur du width */
+            margin-top: -100px;
+        }
+        
+        p1 {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 80px;
+            position: absolute;
+            left: 35%;
+            top: 30%;
+            width: 200px;
+            height: 200px;
+            margin-left: -100px;
+            /* Cette valeur doit être la moitié négative de la valeur du width */
+            margin-top: -100px;
+        }
+        
+        p3 {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 30px;
+            position: absolute;
+            left: 75%;
+            top: 30%;
+            width: 200px;
+            height: 200px;
+            margin-left: -100px;
+            /* Cette valeur doit être la moitié négative de la valeur du width */
+            margin-top: -100px;
+            color: red;
+        }
+        
+        h1 {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 20px;
+            position: absolute;
+            left: 40%;
+            top: 75%;
+            width: 200px;
+            height: 200px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 20px;
+            position: absolute;
+            left: 40%;
+            top: 77%;
+            width: 200px;
+            height: 200px;
+        }
+        
+        h3 {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 20px;
+            position: absolute;
+            left: 40%;
+            top: 79%;
+            width: 200px;
+            height: 200px;
+        }
+        
+        canvas {
+            display: block;
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p> EMG1</p>
+    <div id="g1" class="400x400px"> </div>
+    <div id="g2" class="400x400px"> </div>
+    <p3 id="p4"> Thresholding </p3>
+
+    <canvas id="myCanvas"></canvas>
+    <h1 id="p1">Snake Gaming!</h1>
+    <h2 id="p2">Score</h2>
+    <h3 id="p3">0</h3>
+
+    <script>
+        var threshold = prompt("Please define the THRESHOLD");
+
+        if (confirm("A strong contraction of EMG 1 (> threshold) moves the snake to the right. ")) {
+            // Code à éxécuter si le l'utilisateur clique sur "OK"
+        } else {
+            // Code à éxécuter si l'utilisateur clique sur "Annuler" 
+        }
+
+        if (confirm(" A strong contraction of EMG 2 (> threshold) moves the snake to the left. "
+                " ) )  {
+                    // Code à éxécuter si le l'utilisateur clique sur "OK"
+                } else {
+                    // Code à éxécuter si l'utilisateur clique sur "Annuler" 
+                }
+
+
+
+
+                if (confirm("You can begin the game now !")) {
+                    // Code à éxécuter si le l'utilisateur clique sur "OK"
+                } else {
+                    // Code à éxécuter si l'utilisateur clique sur "Annuler" 
+                }
+
+                var chartTemperatue;
+                var chartHumidity;
+                var emg1_sensor;
+                var emg2_sensor;
+
+
+                function requestData() {
+
+
+                    var requests = $.get('/data');
+
+                    var tm = requests.done(function(result) {
+
+                        emg1_sensor = result[1];
+                        emg2_sensor = result[2]; //2
+
+                        g1.refresh(emg1_sensor);
+                        g2.refresh(emg2_sensor);
+
+                        if (threshold < emg1_sensor) {
+                            document.getElementById("p4").innerHTML = " Threshold reached !";
+                        }
+
+                        if (threshold > emg1_sensor) {
+                            document.getElementById("p4").innerHTML = " Threshold not reached !";
+                        }
+
+                    });
+
+
+                }
+                setInterval(requestData, 50)
+
+                var g1 = new JustGage({
+                    id: "g1", // the id of the html element
+                    value: emg1_sensor,
+                    min: 0,
+                    max: 5,
+                    decimals: 2,
+                    gaugeWidthScale: 0.6,
+                    pointer: true,
+                    counter: true,
+
+
+
+                });
+
+                var g2 = new JustGage({
+                    id: "g2", // the id of the html element
+                    value: emg2_sensor,
+                    min: 0,
+                    max: 5,
+                    decimals: 2,
+                    gaugeWidthScale: 0.6,
+                    pointer: true,
+
+
+                });
+
+
+                const cvs = document.getElementById("myCanvas");
+                const ctx = cvs.getContext("2d");
+                var score = 0;
+
+                cvs.width = 400; cvs.height = 300;
+
+                let frames = 0;
+
+                let foodEaten = false;
+
+                const direction = {
+                    current: 0,
+                    idle: 0,
+                    right: 1,
+                    down: 2,
+                    left: 3,
+                    up: 4
+                }
+
+                document.addEventListener("keydown", function(evt) {
+                    switch (evt.keyCode) {
+                        case 37:
+                            //move left
+                            if (direction.current != direction.left && direction.current != direction.right) direction.current = direction.left;
+                            break;
+                        case 38:
+                            //move up
+                            if (direction.current != direction.up && direction.current != direction.down) direction.current = direction.up;
+                            break;
+                        case 39:
+                            //move right
+                            if (direction.current != direction.right && direction.current != direction.left) direction.current = direction.right;
+                            break;
+                        case 40:
+                            //move down
+                            if (direction.current != direction.down && direction.current != direction.up) direction.current = direction.down;
+                            break;
+                    }
+
+
+
+                });
+
+                function getDistance(pointX1, pointY1, pointX2, pointY2) {
+                    let distanceX = pointX2 - pointX1;
+                    let distanceY = pointY2 - pointY1;
+
+                    return Math.sqrt(Math.pow(distanceX, 2) + Math.pow(distanceY, 2));
+                }
+
+                const food = {
+                    x: cvs.width / 4,
+                    y: cvs.height / 4,
+                    r: 10,
+
+                    draw: function() {
+                        ctx.beginPath();
+                        ctx.fillStyle = "red";
+                        ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI);
+                        ctx.fill();
+                        ctx.closePath();
+                    }
+                }
+                const snake = {
+                    radius: 10,
+                    position: [{
+                        x: cvs.width / 2,
+                        y: cvs.height / 2
+                    }],
+
+                    draw: function() {
+                        ctx.fillStyle = "black";
+                        for (let i = 0; i < this.position.length; i++) {
+                            let p = this.position[i];
+                            ctx.beginPath();
+                            ctx.arc(p.x, p.y, this.radius, 0, 2 * Math.PI);
+                            ctx.fill();
+                            ctx.closePath();
+                        }
+                    },
+
+                    update: function() {
+                        if (frames % 6 == 0) {
+                            if (foodEaten == true) {
+                                score = score + 1;
+
+                                document.getElementById("p3").innerHTML = score;
+
+                                this.position.push({
+                                    x: this.position[this.position.length - 1].x,
+                                    y: this.position[this.position.length - 1].y
+                                });
+                                foodEaten = false;
+                            }
+
+                            if (this.position[0].x < 0) this.position[0].x = cvs.width - 10;
+                            if (this.position[0].x > cvs.width) this.position[0].x = 10;
+                            if (this.position[0].y < 0) this.position[0].y = cvs.height - 10;
+                            if (this.position[0].y > cvs.height) this.position[0].y = 10;
+
+                            for (let i = this.position.length - 1; i > 0; i--) {
+                                if (this.position[0].x == this.position[i].x && this.position[0].y == this.position[i].y && this.position.length > 2) {
+                                    this.position.splice(1);
+                                    break;
+                                }
+                                this.position[i].x = this.position[i - 1].x;
+                                this.position[i].y = this.position[i - 1].y;
+                            }
+                            if (direction.current == direction.right) {
+
+                                this.position[0].x += 5;
+                            }
+                            if (direction.current == direction.left) {
+                                this.position[0].x -= 5;
+                            }
+                            if (direction.current == direction.up) {
+                                this.position[0].y -= 5;
+                            }
+                            if (direction.current == direction.down) {
+                                this.position[0].y += 5;
+                            };
+                            if (getDistance(food.x, food.y, this.position[0].x, this.position[0].y) <= 2 * food.r) {
+                                food.x = Math.random() * cvs.width;
+                                food.y = Math.random() * cvs.height;
+                                foodEaten = true;
+                            }
+                        }
+
+                    }
+                }
+
+                function main() {
+
+                    ctx.clearRect(0, 0, cvs.width, cvs.height);
+                    snake.update();
+                    snake.draw();
+                    food.draw();
+                    frames++;
+                    requestAnimationFrame(main);
+
+                }
+                requestAnimationFrame(main);
+    </script>
+
+    <p1>
+        EMG2
+    </p1>
+    <span style="position: absolute; top: 70px; left: 50px;width: 103px; height: 61px">
+
+<img src='static/image.png'>
+</span>
+</body>
+
+</html>
