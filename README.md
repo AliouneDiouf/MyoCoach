@@ -94,16 +94,14 @@ This section should list any major frameworks that you built your project using.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+The idea is to use the screen of a smartphone to display the application. The system is intended to be very flexible, easy to use and portable. A small portable box will contain all the device.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* [Raspberry pi ](https://html.com/)
+* [Arduino](https://css-tricks.com/)
+* [2 EMG sensor](https://www.javascript.com/)
+* [USB cable](https://www.python.org/)
 
 ### Installation
 
