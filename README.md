@@ -102,9 +102,11 @@ The idea is to use the screen of a smartphone to display the application. The sy
 * [Arduino](https://css-tricks.com/)
 * [2 EMG sensor](https://www.javascript.com/)
 * [USB cable](https://www.python.org/)
+### Principle diagram
+
 This principle diagram summarizes the interactions between the different components of the project
 <a >
-    <img src="image/myocoach.png" alt="Logo" width="600" height="600">
+    <img src="image/myocoach.png" alt="Logo" width="600" height="800">
   </a>
 
 ### Installation
