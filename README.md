@@ -96,12 +96,17 @@ This section should list any major frameworks that you built your project using.
 
 The idea is to use the screen of a smartphone to display the application. The system is intended to be very flexible, easy to use inexpensive and portable. A small portable box for example will contain all the device.
 
+### User Manual
+
+We give more details about how to get the best experiences with the **Myo Coach** in the [user manual](./docs/user-manual.md).
+
 ### Prerequisites
 
 * [Raspberry pi ](https://www.raspberrypi.org/)
 * [Arduino](https://www.arduino.cc/)
 * [2 EMG sensor]
 * [USB cable]
+
 ### Principle diagram
 
 This principle diagram summarizes the interactions between the different components of the project
