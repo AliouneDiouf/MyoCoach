@@ -68,10 +68,14 @@ The MyoCoach can also be addressed to health professionals and more particularly
 
 The MyoCoach allows you to:
 
-● Measure muscle potential using myoelectric sensors
-● Define the optimal position of the sensors
-● Adjust the sensors using the potentiometers
-● Practice muscle contraction and coordination
+<ul>
+        <li> Measure muscle potential using myoelectric sensors</li>
+        <li> Define the optimal position of the sensors</li>
+        <li> Adjust the sensors using the potentiometers </li>
+  <li> Practice muscle contraction and coordination</li>
+        
+ </ul>
+
 
 ### Built With
 
