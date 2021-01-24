@@ -106,7 +106,7 @@ The idea is to use the screen of a smartphone to display the application. The sy
 
 This principle diagram summarizes the interactions between the different components of the project
 <a >
-    <img src="image/myocoach.png" alt="Logo" width="800" height="600">
+    <img src="image/myocoach.png" alt="Logo" width="1000" height="600">
   </a>
 
 ### Installation
