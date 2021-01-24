@@ -241,6 +241,7 @@ But a simple 3-pin header strip is used to interface between the electrodes and 
 
 ![adpatateur_electrode](./image/adpatateur_electrode.png)
 
+
 **:three: Flash the Arduino Board**
 
 The Arduino board fulfils two roles:
@@ -250,7 +251,6 @@ The Arduino board fulfils two roles:
 
 ![arduino_uno](./image/arduino_uno.jpg)
 
-
  We have used the online programming tool developed by Arduino. You can find help and information about this tool by following this link:
 [Getting Started with Arduino Web Editor](https://create.arduino.cc/projecthub/Arduino_Genuino/getting-started-with-arduino-web-editor-on-various-platforms-4b3e4a?f=1)
 
@@ -258,19 +258,25 @@ The Arduino board fulfils two roles:
 
 A powerful tutorial is available [here](https://www.framboise314.fr/installation-de-raspbian-pour-le-raspberry-pi-sur-carte-micro-sd-avec-etcher/)
 
+
+
 ## Programmation
 
-* :one: Create an account on the online programming tool developed by Arduino: [Arduino Web Editor](https://create.arduino.cc)
+* :one:  Create an account on the online programming tool developed by Arduino: [Arduino Web Editor](https://create.arduino.cc)
 
-* :two: Install the Arduino Web Editor [plugin](https://create.arduino.cc/getting-started/plugin)
+* :two:  Install the Arduino Web Editor [plugin](https://create.arduino.cc/getting-started/plugin)
 
 * :three: Importing the **myocoach.ino** file into the online code editor
 
 * :four: Connecting the Arduino card to the computer
 
-* :five: Transfer the MyoCoach programme to the Arduino card
+* :five: Transfer the MyoCoach program to the Arduino card
 
-**:five: Install the Desktop GUI**
+After doing all these steps, you can remove the arduino board from your pc and plug it into your raspberry pi. The code that launches the application is the python app.py file. You must now make your code automatic when starting the raspberry pi and make your rapsberry pi an access point to generate a hotspot at startup.
+
+* :six: Make your code automatic when starting the raspberry pi
+
+**:six:  Install the Desktop GUI**
 
 Follow the [UI programming manual](./docs/ui-programming-manual.md)
 
