@@ -116,7 +116,7 @@ This principle diagram summarizes the interactions between the different compone
 
 ### Installation
 
-You can design the MyoCoach for less than **70€**. More details in the [COSTS](COSTS.md) file.
+You can design the MyoCoach for less than **70€**. More details in the [COSTS](cost.md) file.
 
 Follow this steps to make your own **Myo Coach**
 
