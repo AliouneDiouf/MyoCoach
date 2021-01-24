@@ -94,7 +94,7 @@ This section should list any major frameworks that you built your project using.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-The idea is to use the screen of a smartphone to display the application. The system is intended to be very flexible, easy to use and portable. A small portable box for example will contain all the device.
+The idea is to use the screen of a smartphone to display the application. The system is intended to be very flexible, easy to use inexpensive and portable. A small portable box for example will contain all the device.
 
 ### Prerequisites
 
