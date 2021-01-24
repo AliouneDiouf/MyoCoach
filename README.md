@@ -73,7 +73,7 @@ The MyoCoach allows you to:
         <li> Define the optimal position of the sensors</li>
         <li> Adjust the sensors using the potentiometers </li>
         <li> Practice muscle contraction and coordination</li>
-  <li> very ergonomic and flexible display of emg signals </li>
+  <li> Very ergonomic and flexible display of emg signals </li>
   <li> Serious game  to familiarize  without annoying with EMGs </li>
         
  </ul>
