@@ -24,7 +24,7 @@
 <br />
 <p align="center">
   <a >
-    <img src="image/logo.png" alt="Logo" width="200" height="200">
+    <img src="image/logo.png" alt="Logo" width="500" height="400">
   </a>
 
  
