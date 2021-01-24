@@ -133,11 +133,10 @@ Follow the [manufacturing manual](./docs/manufacturing-manual.md)
 The Arduino board fulfils two roles:
 
 * acquiring the signals from the EMG sensors on two analogue inputs
-* sending this data to a computer via the USB port by emulating a serial link.
+* sending this data to a raspberry  via the USB port by emulating a serial link.
 
-![arduino_uno](./assets/arduino_uno.jpg)
+![arduino_uno](./image/arduino_uno.jpg)
 
-The source code of the Arduino program is available in [src/software/firmware](../src/software/firmware)
 
  We have used the online programming tool developed by Arduino. You can find help and information about this tool by following this link:
 [Getting Started with Arduino Web Editor](https://create.arduino.cc/projecthub/Arduino_Genuino/getting-started-with-arduino-web-editor-on-various-platforms-4b3e4a?f=1)
