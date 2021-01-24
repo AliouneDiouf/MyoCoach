@@ -116,19 +116,33 @@ This principle diagram summarizes the interactions between the different compone
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
+You can design the MyoCoach for less than **70€**. More details in the [COSTS](COSTS.md) file.
+
+Follow this steps to make your own **Myo Coach**
+
+**:one: Download the src**
+
+Dowload the [latest release](https://github.com/orthopus/0102-myocoach-diy/releases/latest)
+
+or clone the **0102-myocoach-diy** repository
+
+```bash
+$ git clone https://github.com/orthopus/0102-myocoach-diy.git
+```
+
+**:two: Make the box**
+
+Follow the [manufacturing manual](./docs/manufacturing-manual.md)
+
+**:three: Flash the Arduino Board**
+
+Follow the [firmware programming manual](./docs/firmware-programming-manual.md)
+
+**:four: Install the Desktop GUI**
+
+Follow the [UI programming manual](./docs/ui-programming-manual.md)
+
+
 
 
 
