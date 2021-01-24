@@ -72,7 +72,8 @@ The MyoCoach allows you to:
         <li> Measure muscle potential using myoelectric sensors</li>
         <li> Define the optimal position of the sensors</li>
         <li> Adjust the sensors using the potentiometers </li>
-  <li> Practice muscle contraction and coordination</li>
+        <li> Practice muscle contraction and coordination</li>
+  <li> Serious game  to familiarize  without annoying with EMGs </li>
         
  </ul>
 
@@ -80,9 +81,12 @@ The MyoCoach allows you to:
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+* [HTML](https://html.com/)
+* [CSS](https://css-tricks.com/)
+* [Javascript](https://www.javascript.com/)
+* [Python](https://www.python.org/)
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+*
 
 
 
