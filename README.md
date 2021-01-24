@@ -254,6 +254,10 @@ The Arduino board fulfils two roles:
  We have used the online programming tool developed by Arduino. You can find help and information about this tool by following this link:
 [Getting Started with Arduino Web Editor](https://create.arduino.cc/projecthub/Arduino_Genuino/getting-started-with-arduino-web-editor-on-various-platforms-4b3e4a?f=1)
 
+**:four: Flash the Raspberry pi  Card**
+
+A powerful tutorial is available [here](https://www.framboise314.fr/installation-de-raspbian-pour-le-raspberry-pi-sur-carte-micro-sd-avec-etcher/)
+
 ## Programmation
 
 * :one: Create an account on the online programming tool developed by Arduino: [Arduino Web Editor](https://create.arduino.cc)
@@ -266,7 +270,7 @@ The Arduino board fulfils two roles:
 
 * :five: Transfer the MyoCoach programme to the Arduino card
 
-**:four: Install the Desktop GUI**
+**:five: Install the Desktop GUI**
 
 Follow the [UI programming manual](./docs/ui-programming-manual.md)
 
