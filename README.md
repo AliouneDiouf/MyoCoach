@@ -96,9 +96,6 @@ This section should list any major frameworks that you built your project using.
 
 The idea is to use the screen of a smartphone to display the application. The system is intended to be very flexible, easy to use inexpensive and portable. A small portable box for example will contain all the device.
 
-### User Manual
-
-We give more details about how to get the best experiences with the **Myo Coach** in the [user manual](https://github.com/Yven92/MyoCoachV2/blob/codes/docs/user-manual.md).
 
 ### Prerequisites
 
@@ -118,13 +115,10 @@ This principle diagram summarizes the interactions between the different compone
 
 You can design the MyoCoach for less than **70€**. More details in the [COSTS](cost.md) file.
 
-Follow this steps to make your own **Myo Coach**
+Follow this steps to make your own **MyoCoach**
 
 **:one: Download the src**
 
-Dowload the [latest release](https://github.com/orthopus/0102-myocoach-diy/releases/latest)
-
-or clone the **0102-myocoach-diy** repository
 
 ```bash
 $ git clone https://github.com/orthopus/0102-myocoach-diy.git
