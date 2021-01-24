@@ -272,9 +272,9 @@ A powerful tutorial is available [here](https://www.framboise314.fr/installation
 
 * :five: Transfer the MyoCoach program to the Arduino card
 
-After doing all these steps, you can remove the arduino board from your pc and plug it into your raspberry pi. The code that launches the application is the python app.py file. You must now make your code automatic when starting the raspberry pi and make your rapsberry pi an access point to generate a hotspot at startup.
+After doing all these steps, you can remove the arduino board from your pc and plug it into your raspberry pi. The code that launches the application is the python **app.py** file. You must now make your code automatic when starting the raspberry pi and make your rapsberry pi an access point to generate a hotspot at startup.
 
-* :six: Make your code automatic when starting the raspberry pi
+* :six: Make the  automatic on startup
 
 **:six:  Install the Desktop GUI**
 
