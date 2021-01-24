@@ -101,7 +101,7 @@ The idea is to use the screen of a smartphone to display the application. The sy
 * [Raspberry pi ](https://www.raspberrypi.org/)
 * [Arduino](https://www.arduino.cc/)
 * [2 EMG sensor]
-* [USB cable
+* [USB cable]
 ### Principle diagram
 
 This principle diagram summarizes the interactions between the different components of the project
