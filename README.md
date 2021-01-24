@@ -121,7 +121,7 @@ Follow this steps to make your own **MyoCoach**
 
 
 ```bash
-$ git clone https://github.com/orthopus/0102-myocoach-diy.git
+$ https://github.com/AliouneDiouf/MyoCoach.git
 ```
 
 **:two: Make the box**
