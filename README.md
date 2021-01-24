@@ -98,7 +98,7 @@ The idea is to use the screen of a smartphone to display the application. The sy
 
 ### User Manual
 
-We give more details about how to get the best experiences with the **Myo Coach** in the [user manual](./docs/user-manual.md).
+We give more details about how to get the best experiences with the **Myo Coach** in the [user manual](https://github.com/Yven92/MyoCoachV2/blob/codes/docs/user-manual.md).
 
 ### Prerequisites
 
