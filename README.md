@@ -80,8 +80,7 @@ The MyoCoach allows you to:
 
 
 ### Built With
-
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+We built this app with the following language. 
 * [HTML](https://html.com/)
 * [CSS](https://css-tricks.com/)
 * [Javascript](https://www.javascript.com/)
