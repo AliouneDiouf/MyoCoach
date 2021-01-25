@@ -250,7 +250,9 @@ The Arduino board fulfils two roles:
 * acquiring the signals from the EMG sensors on two analogue inputs
 * sending this data to a raspberry  via the USB port by emulating a serial link.
 
-![arduino_uno](./image/arduino_uno.jpg)
+<a >
+    <img src="image/arduino_uno.jpg" alt="Logo" width="500" height="300">
+  </a>
 
  We have used the online programming tool developed by Arduino. You can find help and information about this tool by following this link:
 [Getting Started with Arduino Web Editor](https://create.arduino.cc/projecthub/Arduino_Genuino/getting-started-with-arduino-web-editor-on-various-platforms-4b3e4a?f=1)
