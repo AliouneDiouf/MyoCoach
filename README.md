@@ -127,7 +127,7 @@ $ https://github.com/AliouneDiouf/MyoCoach.git
 
 **:two: Make the box**
 
-In this manual you will find all the resources to design the various components of the MyoCoach. You will see that we don't take into account the raspberry pi emplacement, you can make externe by using his base box or adding it in the myocoach box by increase the dimension following the dimension of the raspberry pi. 
+In this manual you will find all the resources to design the various components of the MyoCoach. You will see that we don't take into account the raspberry pi emplacement, you can make externe by using his base box or adding it in the MyoCoach box by increase the dimension following the dimension of the raspberry pi. 
 
 * The [armband](#armband)
 * The Arduino board [casing](#casing)
