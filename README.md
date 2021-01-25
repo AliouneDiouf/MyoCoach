@@ -81,7 +81,7 @@ The MyoCoach allows you to:
 
 
 ### Built With
-We built this app with the following language. 
+To concrate our idea, we built this app with the following language : 
 * [HTML](https://html.com/)
 * [CSS](https://css-tricks.com/)
 * [Javascript](https://www.javascript.com/)
@@ -94,7 +94,7 @@ We built this app with the following language.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-The idea is to use the screen of a smartphone to display the application. The system is intended to be very flexible, easy to use inexpensive and portable. A small portable box for example will contain all the device.
+The idea is to use the screen of a smartphone, a tablet or a pc to display the application. The system is intended to be very flexible, easy to use inexpensive and portable. A small portable box for example will contain all the device.
 
 
 ### Prerequisites
@@ -258,6 +258,8 @@ The Arduino board fulfils two roles:
  We have used the online programming tool developed by Arduino. You can find help and information about this tool by following this link:
 [Getting Started with Arduino Web Editor](https://create.arduino.cc/projecthub/Arduino_Genuino/getting-started-with-arduino-web-editor-on-various-platforms-4b3e4a?f=1)
 
+We prefered tp use the most basic arduino: arduino uno but you can feel free to use another type of arduino...
+
 **:four: Flash the Raspberry pi  Card**
 
 
@@ -265,16 +267,14 @@ The Arduino board fulfils two roles:
     <img src="image/raspb.PNG" alt="Logo" width="500" height="300">
   </a>
 
-
-It will be preferable to use a class 10 memory card for more speed and fluidity of the operating system of the raspberry card.
+The raspberry card needs a **memory card flashed by an operating system**. Several operating systems are available but for this project it will be necessary to use the **raspberry pi os** ! Plus it will be preferable to use a class 10 memory card for more speed and fluidity of the operating system of the raspberry card.
 
 A powerful tutorial  is available [here](https://www.raspberrypi.org/documentation/installation/installing-images/)
 
 
-
 ## Programmation
 
-Don't be afraid you will not use to program anytihng again , just some command to enter ;). Now you will really begin to buil the system !
+Don't be afraid you will not use to program anything again , just some commands to enter ;). Now you will really begin to build the system !
 
 * :one:  Create an account on the online programming tool developed by Arduino: [Arduino Web Editor](https://create.arduino.cc)
 
