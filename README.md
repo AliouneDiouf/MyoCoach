@@ -251,7 +251,7 @@ The Arduino board fulfils two roles:
 * sending this data to a raspberry  via the USB port by emulating a serial link.
 
 <a >
-    <img src="image/arduino_uno.jpg" alt="Logo" width="500" height="300">
+    <img src="image/arduino_uno.png" alt="Logo" width="500" height="300">
   </a>
 
  We have used the online programming tool developed by Arduino. You can find help and information about this tool by following this link:
