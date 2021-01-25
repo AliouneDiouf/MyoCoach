@@ -273,7 +273,8 @@ A powerful tutorial  is available [here](https://www.raspberrypi.org/documentati
 
 
 ## Programmation
-Don't be afraid you will not use to program anytihng again , just some command to enter ;)
+
+Don't be afraid you will not use to program anytihng again , just some command to enter ;). Now you will really begin to buil the system !
 
 * :one:  Create an account on the online programming tool developed by Arduino: [Arduino Web Editor](https://create.arduino.cc)
 
@@ -281,13 +282,20 @@ Don't be afraid you will not use to program anytihng again , just some command t
 
 * :three: Importing the **myocoach.ino** file into the online code editor
 
-* :four: Connecting the Arduino card to the computer
+* :four: Connecting the Arduino card to the computer you have already installed the arduino software
 
 * :five: Transfer the MyoCoach program to the Arduino card
 
+* :six: Considering that you have already flash your raspberry pi card following the tutorial we gave you previously , you can now download the file project from your raspberry pi by typing on the terminal this command:
+
+```bash
+$ https://github.com/AliouneDiouf/MyoCoach.git
+```
+
 After doing all these steps, you can remove the arduino board from your pc and plug it into your raspberry pi. The code that launches the application is the python **app.py** file. You must now make your code automatic when starting the raspberry pi and make your rapsberry pi an access point to generate a hotspot at startup.
 
-* :six: Make the  automatic on startup
+
+* :seven: Make the  automatic on startup
 
 **:six:  Install the Desktop GUI**
 
