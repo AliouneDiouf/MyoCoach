@@ -258,10 +258,9 @@ The Arduino board fulfils two roles:
  We have used the online programming tool developed by Arduino. You can find help and information about this tool by following this link:
 [Getting Started with Arduino Web Editor](https://create.arduino.cc/projecthub/Arduino_Genuino/getting-started-with-arduino-web-editor-on-various-platforms-4b3e4a?f=1)
 
-We prefered tp use the most basic arduino: arduino uno but you can feel free to use another type of arduino...
+We prefered to use the most basic arduino: **arduino uno**  but you can feel free to use another type of arduino...
 
 **:four: Flash the Raspberry pi SD card **
-
 
 <a >
     <img src="image/raspb.PNG" alt="Logo" width="500" height="300">
