@@ -260,14 +260,14 @@ The Arduino board fulfils two roles:
 
 We prefered tp use the most basic arduino: arduino uno but you can feel free to use another type of arduino...
 
-**:four: Flash the Raspberry pi  Card**
+**:four: Flash the Raspberry pi SD card **
 
 
 <a >
     <img src="image/raspb.PNG" alt="Logo" width="500" height="300">
   </a>
 
-The raspberry card needs a **memory card flashed by an operating system**. Several operating systems are available but for this project it will be necessary to use the **raspberry pi os** ! Plus it will be preferable to use a class 10 memory card for more speed and fluidity of the operating system of the raspberry card.
+The raspberry card needs a **SD card flashed by an operating system**. Several operating systems are available but for this project it will be necessary to use the **raspberry pi os** ! Plus it will be preferable to use a class 10 SD card for more speed and fluidity of the operating system of the raspberry card.
 
 A powerful tutorial  is available [here](https://www.raspberrypi.org/documentation/installation/installing-images/)
 
