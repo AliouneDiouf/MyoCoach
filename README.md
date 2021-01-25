@@ -97,7 +97,7 @@ The idea is to use the screen of a smartphone to display the application. The sy
 
 
 ### Prerequisites
-
+You must at least own these 4 things
 * [Raspberry pi ](https://www.raspberrypi.org/)
 * [Arduino](https://www.arduino.cc/)
 * [2 EMG sensor]
@@ -109,6 +109,8 @@ This principle diagram summarizes the interactions between the different compone
 <a >
     <img src="image/myocoach1.png" alt="Logo" width="1000" height="600">
   </a>
+  
+  The role of the arduino board is to receive the analog signals and convert them to digital and finally to send them via the serial port to the raspberry pi board. The raspberry pi board is the main element of our system.It receives EMG data from the arduino board at any time. It creates the web server and a hospot directly when it starts up. The user can connect to this network and thus access the application to view the ELG data or play the serious game.
 
 ### Installation
 
