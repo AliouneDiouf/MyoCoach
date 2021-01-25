@@ -257,7 +257,10 @@ The Arduino board fulfils two roles:
 
 **:four: Flash the Raspberry pi  Card**
 
-A powerful tutorial is available [here](https://www.framboise314.fr/installation-de-raspbian-pour-le-raspberry-pi-sur-carte-micro-sd-avec-etcher/)
+![raspberry pi](./image/raspb.PNG)
+It will be preferable to use a class 10 memory card for more speed and fluidity of the operating system of the raspberry card.
+
+A powerful tutorial  is available [here](https://www.raspberrypi.org/documentation/installation/installing-images/)
 
 
 
