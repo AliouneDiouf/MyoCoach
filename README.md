@@ -60,6 +60,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+In this repo you will find a second version of this [project](https://github.com/orthopus/01-myocoach). We have tried to make  this project more portable, accessible on different platforms (pc, smartpahones, tablets ...)
 The MyoCoach is a device intended for people with upper limb amputees wishing to wear a myoelectric prosthesis made up of 2 EMG electrodes.
 
 It allows you to exercise the contraction of the muscles of the forearm thanks to a video game inspired by Flappy Bird, and to train in the control of the future prosthesis.
