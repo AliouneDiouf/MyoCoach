@@ -259,7 +259,10 @@ The Arduino board fulfils two roles:
 
 **:four: Flash the Raspberry pi  Card**
 
-![raspberry pi](./image/raspb.PNG)
+
+<a >
+    <img src="image/raspb.PNG" alt="Logo" width="500" height="300">
+  </a>
 
 
 It will be preferable to use a class 10 memory card for more speed and fluidity of the operating system of the raspberry card.
