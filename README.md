@@ -127,7 +127,7 @@ $ https://github.com/AliouneDiouf/MyoCoach.git
 
 **:two: Make the box**
 
-In this manual you will find all the resources to design the various components of the MyoCoach.
+In this manual you will find all the resources to design the various components of the MyoCoach. You will see that we don't take into account the raspberry pi emplacement, you can make externe by using his base box or adding it in the myocoach box by increase the dimension following the dimension of the raspberry pi. 
 
 * The [armband](#armband)
 * The Arduino board [casing](#casing)
@@ -158,7 +158,7 @@ Tools :
 The armband is the component of the MyoCoach that holds the two Ottobock EMG sensors (Ref 13E202) on the residual limb of the future prosthesis user. This armband is comfortable, inexpensive and facilitates the positioning of the sensors for the ortho-prosthetist.
 
 ### Printing of the Sensor Supports
-The supports have been made with Fusion360 software. You will see that we don't take into account the raspberry pi emplacement, you can make externe by using his base box or adding it in the myocoach box by increase the dimension following the dimension of the raspberry pi. 
+The supports have been made with Fusion360 software. 
 
 The file in .STL format is available in [this link](https://github.com/orthopus/01-myocoach/tree/master/src/hardware/casing)
 
