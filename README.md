@@ -290,8 +290,13 @@ After the  boot phase , download the MyoCoach file project from your raspberry p
 ```bash
 $ git clone https://github.com/AliouneDiouf/MyoCoach.git
 ```
-Once you have downloaded the project file, place it somewhere you will remember. The code that launches the application is the python **app.py** file.  
-You  must now make your rapsberry pi an access point to generate a hotspot at startup and  make your code automatic when booting  the raspberry pi.
+Once you have downloaded the project file, place it somewhere you will remember. The code that launches the application is the python **app.py** file. Activate the SSH protocol by typing this command on the raspberry pi's terminal: 
+```bash
+$ sudo raspi-config
+```
+And then activate the SSH protocol. 
+
+Well, you  must now make your rapsberry pi an access point to generate a hotspot at startup and  make your code automatic when booting  the raspberry pi.
 
 * :seven: Make your rapsberry pi an access point 
 We have used raspAP to install a WiFi hotspot in no time.  You can see their GItHub page in this [link] (https://raspap.com/). A tutorial is available there  but we think that it's not very powerful, that's why we give the steps to make your rapsberry pi an access point. 
@@ -311,7 +316,7 @@ $ sudo apt-get upgrade
 ```
 If you have a Raspberry Pi 3 or more recent, WiFi is integrated, with models 1 and 2 you will need a WiFi USB key recognized by Raspbian. If necessary, plug the key into one of the Raspberry Pi's USB ports.
 To avoid having a “parasitic” configuration file, we will make a backup copy of the original WiFi configuration file **wpa_supplicant.conf**, then delete it.
-```
+
 ```bash
 $ sudo cp /etc/wpa_supplicant/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf.org
 ```
@@ -326,7 +331,6 @@ $ sudo  rm  /etc/wpa_supplicant/wpa_supplicant.conf
 Install RaspAP from your device’s shell prompt:
 ```bash
 $ curl -sL https://install.raspap.com | bash
-
 ```
 
 
@@ -347,11 +351,14 @@ From a PC on windows you will see:
     <img src="image/raspigui.PNG" alt="Logo" width="200" height="200">
   </a>
   
-Now you have made rasberry pi an access point. You must connect to your rasberry pi from your pc by connecting to this wifi and using the SSH protocol. We suggest you use [putty](https://www.putty.org/). And use the 10.3.141.1 to access to the raspberry pi. 
+Now you have made rasberry pi an access point. You must connect to your rasberry pi from your pc by connecting to this wifi and using the SSH protocol. We suggest you use [putty](https://www.putty.org/). And use the 10.3.141.1 to access to the raspberry pi. If you do not 
 
 <a >
     <img src="image/putty.PNG" alt="Logo" width="400" height="400">
   </a
+
+* :eight: Make the MyoCoach application running on boot
+
 
 **:six:  Install the Desktop GUI**
 
