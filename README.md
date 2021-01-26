@@ -297,7 +297,7 @@ You  must now make your rapsberry pi an access point to generate a hotspot at st
 We have used raspAP to install a WiFi hotspot in no time.  You can see their GItHub page in this [link] (https://raspap.com/). A tutorial is available there  but we think that it's not very powerful, that's why we give the steps to make your rapsberry pi an access point. 
 
 <a >
-    <img src="image/capture4.PNG" alt="Logo" width="400" height="400">
+    <img src="image/Capture4.PNG" alt="Logo" width="400" height="400">
   </a>
 
 
@@ -331,10 +331,7 @@ $ curl -sL https://install.raspap.com | bash
 
 
 Your Raspberry Pi will display RaspAP and offer you folders for installing the RaspAP and Lighttpd programs. Unless you have good reasons to contradict him, answer him with: "Y". 
-<a >
-    <img src="image/insta.PNG" alt="Logo" width="400" height="400">
-  </a>
-  
+
 When you restarted the Raspberry Pi, RaspAP configured hostapd. The WiFi IP address of your AP (Access Point) is 10.3.141.0.
 
 This is where you will access the wlan0 interface of the Raspberry Pi configured as an AP. RaspAP has also configured DHCP to distribute addresses between 10.3.141.50 and 10.3.141.255. When a device (PC, Raspberry Pi, smartphone, tablet, etc.) connects to this AP, DHCP will distribute an IP address between these two values.
