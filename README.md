@@ -288,7 +288,7 @@ Don't be afraid you will not use to program anything again , just some commands 
 After the  boot phase , download the MyoCoach file project from your raspberry pi by typing on the terminal of your raspberry pi  this command:
 
 ```bash
-$ https://github.com/AliouneDiouf/MyoCoach.git
+$ git clone https://github.com/AliouneDiouf/MyoCoach.git
 ```
 
  The code that launches the application is the python **app.py** file. You must now make your code automatic when starting the raspberry pi and make your rapsberry pi an access point to generate a hotspot at startup.
