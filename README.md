@@ -260,7 +260,7 @@ The Arduino board fulfils two roles:
 
 We prefered to use the most basic arduino: **arduino uno**  but you can feel free to use another type of arduino...
 
-**:four: Flash the Raspberry pi SD card **
+**:four: Flash the Raspberry pi SD card**
 
 <a >
     <img src="image/raspb.PNG" alt="Logo" width="500" height="300">
@@ -283,15 +283,15 @@ Don't be afraid you will not use to program anything again , just some commands 
 
 * :four: Connecting the Arduino card to the computer you have already installed the arduino software
 
-* :five: Transfer the MyoCoach program to the Arduino card
+* :five: Transfer the MyoCoach program to the Arduino card. After doing all these steps, you can remove the arduino board from your pc and plug it into your raspberry pi.
 
-* :six: Considering that you have already flash your raspberry pi card following the tutorial we gave you previously , you can now download the file project from your raspberry pi by typing on the terminal this command:
+* :six: Considering that you have already flash your raspberry pi card following the tutorial we gave you previously , you can now download the file project from your raspberry pi by typing on the terminal of your raspberry pi  this command:
 
 ```bash
 $ https://github.com/AliouneDiouf/MyoCoach.git
 ```
 
-After doing all these steps, you can remove the arduino board from your pc and plug it into your raspberry pi. The code that launches the application is the python **app.py** file. You must now make your code automatic when starting the raspberry pi and make your rapsberry pi an access point to generate a hotspot at startup.
+ The code that launches the application is the python **app.py** file. You must now make your code automatic when starting the raspberry pi and make your rapsberry pi an access point to generate a hotspot at startup.
 
 
 * :seven: Make the  automatic on startup
