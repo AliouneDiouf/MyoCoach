@@ -47,7 +47,7 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
         <ul>
-            <li><a href="**:one:Make the box**">Make the box </a></li>
+            <li><a href=" **:one:Make the box** ">Make the box </a></li>
             <li><a href="**:two:Boards Preparation**">Boards Preparation</a></li>
              <li><a href="**:three:Programmation**">Programmation</a></li>
         </ul>
@@ -55,7 +55,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact">Contact</a></li> 
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
