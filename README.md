@@ -302,7 +302,7 @@ Well, you  must now make your rapsberry pi an access point to generate a hotspot
 We have used raspAP to install a WiFi hotspot in no time.  You can see their GItHub page in this [link] (https://raspap.com/). A tutorial is available there  but we think that it's not very powerful, that's why we give the steps to make your rapsberry pi an access point. 
 
 <a >
-    <img src="image/Capture4.PNG" alt="Logo" width="400" height="300">
+    <img src="image/Capture4.PNG" alt="Logo" width="300" height="200">
   </a>
 
 
