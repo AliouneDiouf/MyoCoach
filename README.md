@@ -343,7 +343,6 @@ To configure RaspAP, you access the administration interface via a web page, by 
 
 At the end of the installation, after restarting, the wireless network will be configured as an access point with the following default settings:
 
-IP address: 10.3.141.1/24 and 169.254.218.244/16
 Management username: admin
 Management password: secret
 DHCP range: 10.3.141.50 to 10.3.141.255
