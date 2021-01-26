@@ -237,7 +237,7 @@ But a simple 3-pin header strip is used to interface between the electrodes and 
 ![adpatateur_electrode](./image/adpatateur_electrode.png)
 
 
-**:two: Preparation and the Boards intallation**
+**:two:Boards Preparation**
 
 ### Flash the arduino board
 The Arduino board fulfils two roles:
@@ -264,7 +264,7 @@ The raspberry card needs a **SD card flashed by an operating system**. Several o
 
 A powerful tutorial  is available [here](https://www.raspberrypi.org/documentation/installation/installing-images/)
 
-**:three: Programmation **
+**:three: Programmation**
 
 
 Don't be afraid you will not use to program anything again , just some commands to enter ;). Now you will really begin to build the system !
