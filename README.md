@@ -298,7 +298,8 @@ And then activate the SSH protocol.
 
 Well, you  must now make your rapsberry pi an access point to generate a hotspot at startup and  make your code automatic when booting  the raspberry pi.
 
-* :seven: Make your rapsberry pi an access point 
+* :seven: **Make your rapsberry pi an access point** 
+
 We have used raspAP to install a WiFi hotspot in no time.  You can see their GItHub page in this [link] (https://raspap.com/). A tutorial is available there  but we think that it's not very powerful, that's why we give the steps to make your rapsberry pi an access point. 
 
 <a >
