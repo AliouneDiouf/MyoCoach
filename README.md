@@ -340,9 +340,10 @@ To configure RaspAP, you access the administration interface via a web page, by 
 
 At the end of the installation, after restarting, the wireless network will be configured as an access point with the following default settings:
 
-Management username: **admin**, Management password: **secret**, DHCP range: **10.3.141.50 to 10.3.141.255**, SSID:**raspi-webgui**,  Password: **ChangeMe** .
+Management username: **admin**, Management password: **secret**, DHCP range: **10.3.141.50 to 10.3.141.255**, SSID:**raspi-webgui**,  Password: **ChangeMe**.
 From a PC on windows you will see: 
-<a >
+
+<a>
     <img src="image/raspigui.PNG" alt="Logo" width="200" height="200">
   </a>
   
