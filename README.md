@@ -266,7 +266,7 @@ We prefered to use the most basic arduino: **arduino uno**  but you can feel fre
     <img src="image/raspb.PNG" alt="Logo" width="500" height="300">
   </a>
 
-The raspberry card needs a **SD card flashed by an operating system**. Several operating systems are available but for this project it will be necessary to use the **raspberry pi os** ! Plus it will be preferable to use a class 10 SD card for more speed and fluidity of the operating system of the raspberry card.
+The raspberry card needs a **SD card flashed by an operating system**. Several operating systems are available but for this project it will be necessary to use the **raspberry pi OS** ! And you can  take the aspberry pi OS  with the desktop option if your are not familiar to linux sytem. it will be preferable to use a class 10 SD card for more speed and fluidity of the operating system of the raspberry card.
 
 A powerful tutorial  is available [here](https://www.raspberrypi.org/documentation/installation/installing-images/)
 
@@ -285,7 +285,8 @@ Don't be afraid you will not use to program anything again , just some commands 
 
 * :five: Transfer the MyoCoach program to the Arduino card. After doing all these steps, you can remove the arduino board from your pc and plug it into your raspberry pi.
 
-* :six: Considering that you have already flash your raspberry pi card following the tutorial we gave you previously , you can now download the file project from your raspberry pi by typing on the terminal of your raspberry pi  this command:
+* :six: Considering that you have already flash your raspberry pi card following the tutorial we gave you previously , you can plug it on the raspberry pi and start it. 
+After the  boot phase , download the MyoCoach file project from your raspberry pi by typing on the terminal of your raspberry pi  this command:
 
 ```bash
 $ https://github.com/AliouneDiouf/MyoCoach.git
