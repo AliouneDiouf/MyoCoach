@@ -266,7 +266,7 @@ We prefered to use the most basic arduino: **arduino uno**  but you can feel fre
   </a>
 
 The raspberry card needs a **SD card flashed by an operating system**. Several operating systems are available but for this project it will be necessary to use the **raspberry pi OS** ! And you can  take the aspberry pi OS  with the desktop option if your are not familiar to linux sytem. it will be preferable to use a class 10 SD card for more speed and fluidity of the operating system of the raspberry card.
-
+The photo below is a raspberry pi 4 model B but you can use a lower model, either raspberry pi 3 model B or B+ will do ...
 A powerful tutorial  is available [here](https://www.raspberrypi.org/documentation/installation/installing-images/)
 
 # Programmation
@@ -278,23 +278,79 @@ Don't be afraid you will not use to program anything again , just some commands 
 
 * :two:  Install the Arduino Web Editor [plugin](https://create.arduino.cc/getting-started/plugin)
 
-* :three: Importing the **myocoach.ino** file into the online code editor
+* :three: Importing the **myocoach.ino**  file into the online code editor
 
 * :four: Connecting the Arduino card to the computer you have already installed the arduino software
 
 * :five: Transfer the MyoCoach program to the Arduino card. After doing all these steps, you can remove the arduino board from your pc and plug it into your raspberry pi.
 
-* :six: Considering that you have already flash your raspberry pi SD card following the tutorial we gave you previously , you can plug it on the raspberry pi and start it. 
+* :six: Considering that you have already flash your raspberry pi SD card following the tutorial we gave you previously , you can plug it on the raspberry pi and start it
 After the  boot phase , download the MyoCoach file project from your raspberry pi by typing on the terminal of your raspberry pi  this command:
 
 ```bash
 $ git clone https://github.com/AliouneDiouf/MyoCoach.git
 ```
+Once you have downloaded the project file, place it somewhere you will remember. The code that launches the application is the python **app.py** file.  
+You  must now make your rapsberry pi an access point to generate a hotspot at startup and  make your code automatic when booting  the raspberry pi.
 
- The code that launches the application is the python **app.py** file. You must now make your code automatic when starting the raspberry pi and make your rapsberry pi an access point to generate a hotspot at startup.
+* :seven: Make your rapsberry pi an access point 
+We have used raspAP to install a WiFi hotspot in no time.  You can see their GItHub page in this [link] (https://raspap.com/). A tutorial is available there  but we think that it's not very powerful, that's why we give the steps to make your rapsberry pi an access point. 
+
+<a >
+    <img src="image/raspAP.PNG" alt="Logo" width="500" height="300">
+  </a>
 
 
-* :seven: Make the  automatic on startup
+As always, it is advisable to start with a newly installed “clean” distribution. It avoids possible interference with other programs.
+Start by updating the system : 
+```bash
+$ sudo apt-get update
+```
+```bash
+$ sudo apt-get upgrade
+```
+If you have a Raspberry Pi 3 or more recent, WiFi is integrated, with models 1 and 2 you will need a WiFi USB key recognized by Raspbian. If necessary, plug the key into one of the Raspberry Pi's USB ports.
+To avoid having a “parasitic” configuration file, we will make a backup copy of the original WiFi configuration file **wpa_supplicant.conf**, then delete it.
+```
+```bash
+$ sudo cp /etc/wpa_supplicant/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf.org
+```
+Once this command is done you have copied your basic wifi configuration to the file directory /etc/wpa_supplicant/wpa_supplicant.conf.org, so you can retrieve it at any time.
+
+Then you can delete the WiFi configuration file.
+
+```bash
+$ sudo  rm  /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+Install RaspAP from your device’s shell prompt:
+```bash
+$ curl -sL https://install.raspap.com | bash
+
+```
+
+
+Your Raspberry Pi will display RaspAP and offer you folders for installing the RaspAP and Lighttpd programs. Unless you have good reasons to contradict him, answer him with: "Y". 
+<a >
+    <img src="image/raspAP.PNG" alt="Logo" width="500" height="300">
+  </a>
+  
+When you restarted the Raspberry Pi, RaspAP configured hostapd. The WiFi IP address of your AP (Access Point) is 10.3.141.0.
+
+This is where you will access the wlan0 interface of the Raspberry Pi configured as an AP. RaspAP has also configured DHCP to distribute addresses between 10.3.141.50 and 10.3.141.255. When a device (PC, Raspberry Pi, smartphone, tablet, etc.) connects to this AP, DHCP will distribute an IP address between these two values.
+
+To configure RaspAP, you access the administration interface via a web page, by connecting to the address of the AP, ie 10.3.141.1. This can be done either locally on the Raspberry Pi AP itself, or from another machine connected to the AP.
+
+At the end of the installation, after restarting, the wireless network will be configured as an access point with the following default settings:
+
+IP address: 10.3.141.1/24 and 169.254.218.244/16
+Management username: admin
+Management password: secret
+DHCP range: 10.3.141.50 to 10.3.141.255
+SSID: raspi-webgui
+SSID Password: ChangeMe
+
+From a PC on windows you will see: 
 
 **:six:  Install the Desktop GUI**
 
