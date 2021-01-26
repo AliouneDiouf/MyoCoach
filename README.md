@@ -373,14 +373,16 @@ Then added this at the bottom of the file:
 ```bash
 sudo python FILE PATH/app.py
 ```
-Exit the file with CTRL + O , ENTER and CTRL + X 
+Exit the file with CTRL + O , ENTER and CTRL + X.
+
 IMPORTANT !**YOU MUST REPLACE FILE PATH WITH THE ACTUAL PATH FROM WHERE YOU PUT THE PROJECT FILE.**
 
 
 * :nine:  **Start the application**
+
 Reboot the raspberry pi, make sure that you have well connected the EMG sensor to the arduino and that it is connected to the raspberry pi via the usb port.
 
-From a pc , a tablet or a smartphone connect to the wifi hotsopt of the raspberry pi and type this in a navigator : **10.3.141.1:5000**
+From a pc , a tablet or a smartphone connect to the wifi hotspot of the raspberry pi and type this in a navigator : **10.3.141.1:5000**
 
 
 <!-- USAGE EXAMPLES -->
