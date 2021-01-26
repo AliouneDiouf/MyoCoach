@@ -301,7 +301,7 @@ We have used raspAP to install a WiFi hotspot in no time.  You can see their GIt
   </a>
 
 
-As always, it is advisable to start with a newly installed “clean” distribution. It avoids possible interference with other programs.
+As always, it is advisable to start with a newly installed “clean” distribution. It avoids possible interference with other programs. 
 Start by updating the system : 
 ```bash
 $ sudo apt-get update
