@@ -124,7 +124,7 @@ You can design the MyoCoach for less than **70€**. More details in the [COSTS]
 
 Follow this steps to make your own **MyoCoach**
 
-##**:one:Make the box**
+**:one:Make the box**
 
 In this manual you will find all the resources to design the various components of the MyoCoach. You will see that we don't take into account the raspberry pi emplacement, you can make externe by using his base box or adding it in the MyoCoach box by increase the dimension following the dimension of the raspberry pi. 
 
