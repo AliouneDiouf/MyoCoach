@@ -359,7 +359,7 @@ Now you have made rasberry pi an access point. You must connect to your rasberry
 
 The screenshot above shows exactly what you have to do with putty. If you don't do any changes the login of your raspberry pi  is : **pi** and the password: **raspberry**
 
-* :eight: **Make the MyoCoach application running on boot
+* :eight: **Make the MyoCoach application running on boot**
 
 
 **:six:  Install the Desktop GUI**
