@@ -362,11 +362,22 @@ The screenshot above shows exactly what you have to do with putty. If you don't 
 
 * :eight: **Make the MyoCoach application running on boot**
 
+You just have to modify the /etc/profile file by doing:
 
-**:six:  Install the Desktop GUI**
+```bash
+$ sudo nano /etc/profile
+```
+I remember you that the file that start the project is app.py.
+
+Then added this at the bottom of the file: 
+```bash
+sudo python FILE PATH/app.py
+```
+IMPORTANT ! YOU MUST REPLACE FILE PATH WITH THE ACTUAL PATH FROM WHERE YOU PUT THE PROJECT FILE.
+* :nine:  **Start the application**
+
 
 Follow the [UI programming manual](./docs/ui-programming-manual.md)
-
 
 
 
