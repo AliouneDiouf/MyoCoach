@@ -24,7 +24,7 @@
 <br />
 <p align="center">
   <a >
-    <img src="image/logo.png" alt="Logo" width="400" height="400">
+    <img src="image/logo.png" alt="Logo" width="400" height="600">
   </a>
 
  
@@ -46,6 +46,14 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <ul>
+            <li><a href="**:one:Make the box**">Make the box </a></li>
+            <li><a href="**:two:Boards Preparation**">Boards Preparation</li>
+             <li><a href="**:three:Programmation**">Programmation</li>
+
+          
+
+        </ul>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
