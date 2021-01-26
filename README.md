@@ -47,9 +47,9 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
         <ul>
-            <li><a href="# Make the box">Make the box</a></li>
-            <li><a href="# Boards Preparation">Boards Preparation</a></li>
-            <li><a href="# Programmation">Programmation</a></li>
+            <li><a href="#Make-the-box">Make the box</a></li>
+            <li><a href="#Boards-Preparation">Boards Preparation</a></li>
+            <li><a href="#Programmation">Programmation</a></li>
         </ul>
       </ul>
     </li>
