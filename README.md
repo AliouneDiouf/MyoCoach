@@ -343,13 +343,18 @@ To configure RaspAP, you access the administration interface via a web page, by 
 
 At the end of the installation, after restarting, the wireless network will be configured as an access point with the following default settings:
 
-Management username: admin
-Management password: secret
-DHCP range: 10.3.141.50 to 10.3.141.255
-SSID: raspi-webgui
-SSID Password: ChangeMe
+Management username: **admin**, Management password: **secret**, DHCP range: **10.3.141.50 to 10.3.141.255**, SSID:**raspi-webgui**,  Password: **ChangeMe** 
 
 From a PC on windows you will see: 
+<a >
+    <img src="image/raspigui.PNG" alt="Logo" width="500" height="300">
+  </a>
+  
+Now you have made rasberry pi an access point. You must connect to your rasberry pi from your pc by connecting to this wifi and using the SSH protocol. We suggest you use [putty](https://www.putty.org/). And use the 10.3.141.1 to access to the raspberry pi. 
+
+<a >
+    <img src="image/putty.PNG" alt="Logo" width="500" height="300">
+  </a
 
 **:six:  Install the Desktop GUI**
 
