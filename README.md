@@ -297,7 +297,7 @@ You  must now make your rapsberry pi an access point to generate a hotspot at st
 We have used raspAP to install a WiFi hotspot in no time.  You can see their GItHub page in this [link] (https://raspap.com/). A tutorial is available there  but we think that it's not very powerful, that's why we give the steps to make your rapsberry pi an access point. 
 
 <a >
-    <img src="image/Capture4.PNG" alt="Logo" width="400" height="400">
+    <img src="image/Capture4.PNG" alt="Logo" width="400" height="300">
   </a>
 
 
@@ -343,7 +343,7 @@ At the end of the installation, after restarting, the wireless network will be c
 Management username: **admin**, Management password: **secret**, DHCP range: **10.3.141.50 to 10.3.141.255**, SSID:**raspi-webgui**,  Password: **ChangeMe** .
 From a PC on windows you will see: 
 <a >
-    <img src="image/raspigui.PNG" alt="Logo" width="200" height="300">
+    <img src="image/raspigui.PNG" alt="Logo" width="200" height="200">
   </a>
   
 Now you have made rasberry pi an access point. You must connect to your rasberry pi from your pc by connecting to this wifi and using the SSH protocol. We suggest you use [putty](https://www.putty.org/). And use the 10.3.141.1 to access to the raspberry pi. 
