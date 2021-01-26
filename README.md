@@ -332,7 +332,7 @@ $ curl -sL https://install.raspap.com | bash
 
 Your Raspberry Pi will display RaspAP and offer you folders for installing the RaspAP and Lighttpd programs. Unless you have good reasons to contradict him, answer him with: "Y". 
 <a >
-    <img src="image/raspAP.PNG" alt="Logo" width="500" height="300">
+    <img src="image/capture4.PNG" alt="Logo" width="500" height="300">
   </a>
   
 When you restarted the Raspberry Pi, RaspAP configured hostapd. The WiFi IP address of your AP (Access Point) is 10.3.141.0.
