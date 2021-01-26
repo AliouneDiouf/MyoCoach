@@ -119,7 +119,7 @@ You can design the MyoCoach for less than **70€**. More details in the [COSTS]
 
 Follow this steps to make your own **MyoCoach**
 
-**Make the box**
+**:one:Make the box**
 
 In this manual you will find all the resources to design the various components of the MyoCoach. You will see that we don't take into account the raspberry pi emplacement, you can make externe by using his base box or adding it in the MyoCoach box by increase the dimension following the dimension of the raspberry pi. 
 
@@ -237,8 +237,9 @@ But a simple 3-pin header strip is used to interface between the electrodes and 
 ![adpatateur_electrode](./image/adpatateur_electrode.png)
 
 
-**:three: Flash the Arduino Board**
+**:two: Preparation and the Boards intallation**
 
+### Flash the arduino board
 The Arduino board fulfils two roles:
 
 * acquiring the signals from the EMG sensors on two analogue inputs
@@ -253,7 +254,7 @@ The Arduino board fulfils two roles:
 
 We prefered to use the most basic arduino: **arduino uno**  but you can feel free to use another type of arduino...
 
-**:four: Flash the Raspberry pi SD card**
+### Flash the Raspberry pi SD card
 
 <a >
     <img src="image/raspb.PNG" alt="Logo" width="500" height="300">
@@ -263,8 +264,8 @@ The raspberry card needs a **SD card flashed by an operating system**. Several o
 
 A powerful tutorial  is available [here](https://www.raspberrypi.org/documentation/installation/installing-images/)
 
+**:three: Programmation **
 
-## Programmation
 
 Don't be afraid you will not use to program anything again , just some commands to enter ;). Now you will really begin to build the system !
 
