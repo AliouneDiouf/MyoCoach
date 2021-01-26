@@ -274,18 +274,18 @@ A powerful tutorial  is available [here](https://www.raspberrypi.org/documentati
 
 Don't be afraid you will not use to program anything again , just some commands to enter ;). Now you will really begin to build the system !
 
-* :one:  Create an account on the online programming tool developed by Arduino: [Arduino Web Editor](https://create.arduino.cc)
+* :one:  **Create an account** on the online programming tool developed by Arduino: [Arduino Web Editor](https://create.arduino.cc)
 
-* :two:  Install the Arduino Web Editor [plugin](https://create.arduino.cc/getting-started/plugin)
+* :two:  **Install the Arduino Web Editor** [plugin](https://create.arduino.cc/getting-started/plugin)
 
 * :three: Importing the **myocoach.ino**  file into the online code editor
 
-* :four: Connecting the Arduino card to the computer you have already installed the arduino software
+* :four: **Connecting the Arduino card to the computer you have already installed the arduino software
 
-* :five: Transfer the MyoCoach program to the Arduino card. After doing all these steps, you can remove the arduino board from your pc and plug it into your raspberry pi.
+* :five: **Transfer the MyoCoach program to the Arduino card**. After doing all these steps, you can remove the arduino board from your pc and plug it into your raspberry pi.
 
 * :six: Considering that you have already flash your raspberry pi SD card following the tutorial we gave you previously , you can plug it on the raspberry pi and start it
-After the  boot phase , download the MyoCoach file project from your raspberry pi by typing on the terminal of your raspberry pi  this command:
+After the  boot phase , **download the MyoCoach file project** from your raspberry pi by typing on the terminal of your raspberry pi  this command:
 
 ```bash
 $ git clone https://github.com/AliouneDiouf/MyoCoach.git
@@ -351,13 +351,15 @@ From a PC on windows you will see:
     <img src="image/raspigui.PNG" alt="Logo" width="200" height="200">
   </a>
   
-Now you have made rasberry pi an access point. You must connect to your rasberry pi from your pc by connecting to this wifi and using the SSH protocol. We suggest you use [putty](https://www.putty.org/). And use the 10.3.141.1 to access to the raspberry pi. If you do not 
+Now you have made rasberry pi an access point. You must connect to your rasberry pi from your pc by connecting to this wifi and using the SSH protocol. We suggest you use [putty](https://www.putty.org/). And use the 10.3.141.1 to access to the raspberry pi.  
 
 <a >
     <img src="image/putty.PNG" alt="Logo" width="400" height="400">
   </a
 
-* :eight: Make the MyoCoach application running on boot
+The screenshot above shows exactly what you have to do with putty. If you don't do any changes the login of your raspberry pi  is : **pi** and the password: **raspberry**
+
+* :eight: **Make the MyoCoach application running on boot
 
 
 **:six:  Install the Desktop GUI**
