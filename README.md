@@ -414,7 +414,7 @@ Then you can delete the WiFi configuration file.
 $ sudo  rm  /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
-Install RaspAP from your device’s shell prompt:
+Install RaspAP from your device’s shell prompt (raspberry pi's terminal):
 ```bash
 $ curl -sL https://install.raspap.com | bash
 ```
