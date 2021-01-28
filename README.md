@@ -363,7 +363,7 @@ Don't be afraid you will not use to program anything again , just some commands 
 
 * :four: **Connecting the Arduino card to the computer you have already installed the arduino software
 
-* :five: **Transfer the MyoCoach program to the Arduino card**. After doing all these steps, you can remove the arduino board from your pc and plug it into your raspberry pi.
+* :five: **Transfer the MyoCoach program to the Arduino card**. After doing all these steps, you can remove the arduino board from your pc and plug it into your raspberry pi like this picture above. 
 
 <a >
     <img src="image/usb.PNG" alt="Logo" width="300" height="400">
