@@ -366,7 +366,7 @@ Don't be afraid you will not use to program anything again , just some commands 
 * :five: **Transfer the MyoCoach program to the Arduino card**. After doing all these steps, you can remove the arduino board from your pc and plug it into your raspberry pi.
 
 <a >
-    <img src="image/usb.PNG" alt="Logo" width="300" height="200">
+    <img src="image/usb.PNG" alt="Logo" width="300" height="400">
   </a>
 
 * :six: Considering that you have already flash your raspberry pi SD card following the tutorial we gave you previously , you can plug it on the raspberry pi and start it
