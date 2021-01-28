@@ -49,8 +49,8 @@
         <ul>
             <li><a href="#Make-the-box">Make the box</a></li>
             <li><a href="#Boards-Preparation">Boards Preparation</a></li>
-            <li><a href="#Programmation">Programmation</a></li>
             <li><a href="#Electrodes placement protocol">Electrodes placement protocol</a></li>
+            <li><a href="#Programmation">Programmation</a></li>
         </ul>
       </ul>
     </li>
@@ -292,13 +292,13 @@ An EMG electrode must be placed along and in the middle of the muscle fibre.
 
 * :eight: Then move the electrode in the 4 directions (up, down, left and right) from the starting position. The movement should be about half the width of the electrode (1 cm).
 
-![deplacement_electrode](./assets/deplacement_electrode.png)
+![deplacement_electrode](./image/deplacement_electrode.png)
 
 * :nine: If the signal amplitude is greater at one of the new positions, repeat step :eight:, defining this new position as the starting point.
 
 * :keycap_ten: The position with the maximum amplitude is then marked on the user's skin with a **pencil**.
 
-![marquage_position_electrode](./assets/marquage_position_electrode.png)
+![marquage_position_electrode](./image/marquage_position_electrode.png)
 
 
 * Finally, the gain adjustment is defined so that the user can comfortably reach a signal level between 20 and 80% on the application's Signal Widget.
@@ -348,8 +348,9 @@ The raspberry card needs a **SD card flashed by an operating system**. Several o
 The photo below is a raspberry pi 4 model B but you can use a lower model, either raspberry pi 3 model B or B+ will do ...
 A powerful tutorial  is available [here](https://www.raspberrypi.org/documentation/installation/installing-images/).
 Before that you can start the raspberry pi and install flask for python :
+
 Install `flask` :
-```
+```bash
 $ sudo apt-get install python3-flask
 ```
 
