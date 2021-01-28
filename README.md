@@ -312,10 +312,6 @@ An EMG electrode must be placed along and in the middle of the muscle fibre.
 ![vue_brassard](./image/vue_brassard.png)
 
 :two: Connect the electrodes to the MyoCoach housing.
-* The electrode on the **outside** of the forearm must be connected to the **EMG 0** connector of the housing.
-* The electrode placed **inside** the forearm must be connected to the **EMG 1** connector of the housing.
-
-![emg_0_emg_1](./image/emg_0_emg_1.png)
 
 Once the electrodes have been connected and the ArmBand adjusted, the user is ready to practice using EMG sensors! :muscle:
 
