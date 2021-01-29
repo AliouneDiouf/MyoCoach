@@ -473,9 +473,48 @@ From a pc , a tablet or a smartphone connect to the wifi hotspot of the raspberr
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Here is a description of the MyoCoach interface.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+![general_view](./image/recording2.gif)
+
+### Menu : Vizualisation
+This Menu allows you to visualize in real time the acquisition of EMG signals that will be use for the application.
+
+* :one: Click on the **Vizualisation** Menu, both signals will be directly displayed.
+
+![visualisation](./image/viz.PNG)
+* :two: You can visualize in full screen each graph.
+
+> :bulb: If during the use of the Vizualisation Menu, you encounter a problem (absence of EMG signals, blocking of the menus...), remember to reload the web page or go back to the main menu and do the previous steps again.
+
+### Menu : Gaming
+![gaming_page](./image/recording.gif)
+In this menu you can choose between the different games.
+
+* **Game 1**: You reach the Snake game.
+![snake](./image/Capture1.PNG)
+
+* A pulse from the **EMG 0** sensor that exceeds the threshold moves the snake **right**.
+* A pulse from the **EMG 1** sensor that exceeds the threshold moves the snake **left**.
+* The displacement of the snake is relative to the power of the pulse.
+
+
+* **Game 2**: You reach the Flappy Bird game which is more difficult than the snake game
+![Flappy](./image/Capture3.PNG)
+
+* The bird does not fall. It maintains its height when the user does not control it
+* A pulse from the **EMG 0** sensor that exceeds the threshold moves the bird **upwards**.
+* A pulse from the **EMG 1** sensor that exceeds the threshold moves the bird **downwards**.
+* The displacement of the bird is relative to the power of the pulse.
+
+As you can see, the score is displayed as two gauges that represent the force deployed by the user. The threshold can be set when you reach the game page, it will determine the minimal force above which the game will react (eg: the bird going up or down, the snake going left or right).
+The game play has been modified to better correspond to the use of EMG sensors but the graphics of the original game have been kept! :fire:
+
+### Menu: About Us
+In this menu you will find some information about our team and the background of the project.
+
+### Menu : GitHub
+This menu is a bridge to the GitHub webpage of the project.
 
 
 
