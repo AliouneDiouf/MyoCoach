@@ -540,10 +540,9 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Alioune Badara Diouf  - badaradiouf101@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
+[ LinkedIn] (www.linkedin.com/in/alioune-badara-diouf-019036120)
 
 
 
