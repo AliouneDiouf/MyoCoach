@@ -1,67 +1,82 @@
-# MyoCoach
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
 
 
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
-
-
-
-<!-- PROJECT LOGO -->
-<br />
 <p align="center">
-  <a >
-    <img src="image/logo.png" alt="Logo" width="600" height="400">
-  </a>
+  <img src="image/logo.png" alt="MyoCoach" width="520">
+</p>
 
- 
+<h1 align="center">MyoCoach</h1>
 
+<p align="center">
+  Open-source EMG training device for upper-limb amputees preparing to use a myoelectric prosthesis.<br>
+  Two EMG sensors, an Arduino, a Raspberry Pi — and a web app you reach from any phone or tablet.
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.9%2B-blue" alt="Python 3.9+">
+  <img src="https://img.shields.io/badge/framework-Flask-black" alt="Flask">
+  <img src="https://img.shields.io/badge/hardware-Arduino%20%7C%20Raspberry%20Pi-teal" alt="Hardware">
+  <img src="https://img.shields.io/badge/build%20cost-%3C%2070%E2%82%AC-green" alt="Under 70 euros">
+</p>
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <ul>
-            <li><a href="#Make-the-box">Make the box</a></li>
-            <li><a href="#Boards-Preparation">Boards Preparation</a></li>
-            <li><a href="#Electrodes placement protocol">Electrodes placement protocol</a></li>
-            <li><a href="#Programmation">Programmation</a></li>
-        </ul>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li> 
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
+![MyoCoach interface](./image/recording2.gif)
 
+## What it does
 
+Fitting a myoelectric prosthesis starts with placing two EMG electrodes on the
+right muscles and setting their gain. MyoCoach makes that step measurable, and
+turns the practice that follows into a game.
+
+- **Visualise** both EMG channels in real time, to find the optimal electrode position
+- **Adjust** sensor gain against a live signal gauge
+- **Practice** muscle contraction and coordination through Snake and Flappy Bird,
+  both driven by muscle activity rather than a keyboard
+
+It is aimed at prosthesis users and at the orthotists and occupational therapists
+who fit them.
+
+## How it works
+
+```
+2× Ottobock 13E202 EMG  ──analog──>  Arduino UNO  ──USB serial──>  Raspberry Pi
+                                                                        │
+                                              Flask app + Wi-Fi hotspot │
+                                                                        ▼
+                                                  phone / tablet / laptop browser
+```
+
+The Arduino samples both electrodes at 50 Hz and streams them as `EMG0:EMG1`.
+The Raspberry Pi runs the Flask application and its own access point, so the
+device works with no network and no installation on the user's phone.
+
+## Quick start
+
+```bash
+git clone https://github.com/AliouneDiouf/MyoCoach.git
+cd MyoCoach
+pip install -r requirements.txt
+python app.py          # then open http://<raspberry-ip>:5000
+```
+
+Flash `myocoach.ino` to the Arduino first. Without a board connected the app
+still starts and serves zeros, so the interface can be demonstrated on a laptop.
+
+Full build instructions — 3D-printed armband and casing, wiring, electrode
+placement protocol and hotspot setup — are below.
+
+## Credits
+
+A second version of [orthopus/01-myocoach](https://github.com/orthopus/01-myocoach),
+reworked to run on a Raspberry Pi and be reachable from any browser.
+Electrode placement protocol based on Chadwell et al., *The Reality of Myoelectric
+Prostheses*, Frontiers in Neurorobotics, 2016.
+
+## Contact
+
+Alioune Badara Diouf — [badaradiouf101@gmail.com](mailto:badaradiouf101@gmail.com) ·
+[LinkedIn](https://www.linkedin.com/in/alioune-badara-diouf-019036120)
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
