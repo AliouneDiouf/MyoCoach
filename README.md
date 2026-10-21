@@ -75,8 +75,7 @@ Prostheses*, Frontiers in Neurorobotics, 2016.
 Alioune Badara Diouf — [badaradiouf101@gmail.com](mailto:badaradiouf101@gmail.com) ·
 [LinkedIn](https://www.linkedin.com/in/alioune-badara-diouf-019036120)
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
